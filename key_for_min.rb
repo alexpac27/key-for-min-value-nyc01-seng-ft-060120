@@ -8,18 +8,14 @@ def key_for_min_value(name_hash)
   if name_hash.empty?
     return nil
   end
-
 lowest_price = name_hash.first[1]
   name_hash.each_value {|value|
-
     if value <= lowest_price
     lowest_price = value
     end
   }
 array = name_hash.find {|key,value| value == lowest_price}
-
-  p array[0]
-
+p array[0]
 end
 
 key_for_min_value(hash)
