@@ -5,12 +5,11 @@
 #hash = {}
 
 def key_for_min_value(name_hash)
-lowest_price = 0
-sum = 0
-name_hash.each { |key,value| sum = sum + name_hash[key] }
+#lowest_price = 0
+#sum = 0
+#name_hash.each { |key,value| sum = sum + name_hash[key] }
 
-lowest_price = sum
-
+lowest_price = name_hash.first[1]
 name_hash.each_value {|value|
 
     if value <= lowest_price
