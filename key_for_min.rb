@@ -18,9 +18,7 @@ lowest_price = name_hash.first[1]
   }
 array = name_hash.find {|key,value| value == lowest_price}
 
-
-    p array[0]
-
+  p array[0]
 
 end
 
